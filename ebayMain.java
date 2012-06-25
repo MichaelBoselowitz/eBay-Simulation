@@ -37,7 +37,7 @@ public class ebayMain
         try
         {
         	DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
-        	connection = DriverManager.getConnection("jdbc:oracle:thin:@db10.cs.pitt.edu:1521:dbclass", "mjb162", "3580903");
+        	connection = DriverManager.getConnection("", "", "");
         	statement = connection.createStatement();
         	if(login == 0)
         		resultset = statement.executeQuery("select * from Customer where login = '" + username + "'");
